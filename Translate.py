@@ -1,17 +1,16 @@
 #This function translates one character
-def binary_to_String(binary):
-    stringy = splitSpace(binary)
-    CharList = []
-    for bit in stringy:
-        CharList.append(chr(int(bit)))
-    return ''.join(CharList)
+def binary_to_String(binstr):
+    bin_list = binstr.split()
+    char_list = []
+    for bit in bin_list:
+        char_list.append(chr(int(bit)))
+    return ''.join(char_list)
     
 
 
-def String_to_binary(String):
-    ord()
-    return 0
-
-def splitSpace(stringy):
-    stringy.split(" ")
-    return stringy
+def String_to_binary(charstr):
+    char_list = list(charstr)
+    bin_list = []
+    for char in char_list:
+        bin_list.append(str(ord(char)))
+    return ' '.join(bin_list)

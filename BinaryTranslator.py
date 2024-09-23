@@ -25,10 +25,10 @@ def scan_bin():
     valid = False
     while valid == False:
         try:
-            string = input("Enter a binary value")
-            integer = int(string.replace(" ", ""))
+            string = input("Enter a binary value: ")
+            int(string.replace(" ", "")) #This will give an error if there are non-int characters
             valid = True
-            return integer
+            return string
         except ValueError:
             continue
 main()
